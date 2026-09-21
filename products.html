@@ -23,10 +23,18 @@
 
 
   <main>
-    <h1>Danh sách sản phẩm</h1>
+    <!-- . Danh mục sản phẩm -->
+    <section>
+      <h2>Danh sách sản phẩm</h2>
+      <ul>
+        <li><a href="#baby" target="_self">Đồ trẻ em</a></li>
+        <li><a href="#women" target="_self">Đồ nữ</a></li>
+        <li><a href="#men" target="_self">Đồ nam</a></li>
+      </ul>
+    </section>
 
     <!-- Khu vực vực đồ trẻ em -->
-    <section>
+    <section id="baby">
       <h2>Đồ trẻ em</h2>
       <!-- Đồ trẻ em 01 -->
       <article>
@@ -57,7 +65,7 @@
     </section>
 
     <!-- Khu vực vực đồ nữ -->
-    <section>
+    <section id="women">
       <h2>Đồ nữ</h2>
       <!-- Đồ nữ 01 -->
       <article>
@@ -79,8 +87,10 @@
 
       <!-- Đồ nữ 03 -->
       <article>
+        <figure>
         <img src="images/products/women/nu_vay.webp" alt="Váy trắng bồng bềnh nữa" width="200" />
         <h3>Váy trắng bồng bềnh nữ</h3>
+        </figure>
         <p>Giá sản phẩm: 320,000đ</p>
         <p>Miêu tả: chất vải nhẹ, freesize>
         <p><a href="product-detail.html">Xem chi tiết</a></p>
@@ -88,7 +98,7 @@
     </section>
 
     <!-- Khu vực vực đồ nam -->
-    <section>
+    <section id="men">
       <h2>Đồ nam</h2>
       <article>
         <!-- Đồ nam 01 -->
@@ -123,9 +133,26 @@
 
 
   <footer>
-    &lt;1 2 3 4 5 6&gt;
+    <!-- Menu điều hướng pagination -->
+    <nav>
+      <ul>
+        <li><a>&lt;1&gt;</a></li>
+        <li><a>&lt;2&gt;</a></li>
+        <li><a>&lt;3&gt;</a></li>
+        <li><a>&lt;4&gt;</a></li>
+        <li><a>&lt;5&gt;</a></li>
+      </ul>
+    </nav>
+    <!-- Menu điều hướng đến các pages -->
+     <nav>
+      <ul>
+        <li><a href="index.html">Trang chính</a></li>
+        <li><a href="about.html">Về chúng tôi</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+    
     <p>&#169 Copyright thuộc về Tủ Đồ</p>
-    <p>Email liên hệ:<a href="mailto:contact@tudo.vn"> contact@tudo.vn</a></p>
   </footer>
 
 
