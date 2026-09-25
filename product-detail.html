@@ -11,14 +11,42 @@
 <body>
   <!-- Thanh menu -->
   <header>
+    <!-- 1.1 thanh menu góc trái  -->
+    <a href="index.html" target="_self">
+      <img src="images/logo/images.png" alt="Logo hình con gà" width="200">
+    </a>
+    <!-- 1.2 thanh menu ở giữa -->
     <nav>
       <ul>
         <li><a href="index.html" target="_blank" rel="noopener">Home</a></li>
         <li><a href="products.html" target="_blank" rel="noopener noreferrer">Shop</a></li>
-        <li><a href="About.html" target="_blank" rel="noopener noreferrer">About</a></li>
+        <li><a href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
         <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- 3. Danh mục sản phẩm -->
+    <section>
+      <h2>Danh sách sản phẩm</h2>
+      <ul>
+        <li><a href="products.html#baby" target="_self">Đồ trẻ em</a></li>
+        <li><a href="products.html#women" target="_self">Đồ nữ</a></li>
+        <li><a href="products.html#men" target="_self">Đồ nam</a></li>
+      </ul>
+    </section>
+
+    <!-- 1.3 thanh menu góc phải gồm function đăng nhập và giỏ hàng-->
+    <div>
+
+      <a href="login.html" target="_self">
+        <img src="images/logo/login.png" alt="icon login" width="20" />
+      </a>
+
+      <a href="cart.html" target="_self">
+        <img src="images/logo/cart.png" alt="icon cart" width="20" />
+      </a>
+
+    </div>
   </header>
 
   <!-- Sản phẩm chính -->
@@ -59,6 +87,14 @@
         </dl>
       </section>
 
+
+    <!-- Form mua sản phẩm -->
+     <form action="">
+      <label for="quantity">Số lượng</label>
+      <input type="number" id="quantity" name="quantity" value="1" min="1" max="5">
+      <button type="submit">Mua hàng</button>
+     </form>
+
       <!-- Video về sản phẩm -->
       <section>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sd8-Qo70hXQ?si=z_UgE6qKSrFwPRhN"
@@ -67,12 +103,72 @@
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
       </section>
-
     </article>
+
+    <!-- Đánh giá khách hàng -->
+    <section>
+      <h3>Đánh giá khách hàng</h3>
+      <article>
+        <header>
+          <h4>Bình luận bởi Hùng Ngô</h4>
+          <time datetime="2026-09-19T23:30">23:30 ngày 19/09/2026</time>
+        </header>
+        <p>sản phẩm chất lượng, dịch vụ khách hàng tốt</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFD700"
+          aria-hidden="true">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+        </svg>
+      </article>
+
+      <article>
+        <header>
+          <h4>Bình luận bởi Anna</h4>
+          <time datetime="2026-08-10T11:30">11:30 ngày 10/08/2026</time>
+        </header>
+        <p>Mẫu rất tôn dáng, đẹp như hình, giao hàng nhanh</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFD700"
+          aria-hidden="true">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+        </svg>
+      </article>
+    </section>
+
+    <!-- 4.Slide hình giới thiệu sản phẩm -->
+    <section>
+      <h3>Sản phẩm bạn có thể thích</h3>
+      <!-- 3.1 Đồ baby -->
+      <a href="product-detail.html">
+        <img src="images/products/baby/boy_shirt.webp" alt="Bộ đồ sọc hình unicon cho bé trai" height="150" />
+      </a>
+
+      <a href="product-detail.html">
+        <img src="images/products/baby/boy_fullset_stripe.jpg" alt="Áo ba lỗ hình con vịt cho bé trai" height="150" />
+      </a>
+      <!-- 3.2 Đồ women -->
+      <a href="product-detail.html">
+        <img src="images/products/women/nu_aosomi.webp" alt="Áo sơ mi freesize nữ màu tím" height="150" />
+      </a>
+
+      <a href="product-detail.html">
+        <img src="images/products/women/nu_vay.webp" alt="Váy trắng bồng bềnh nữa" height="150" />
+      </a>
+      <!-- 3.3 Đồ men -->
+      <a href="product-detail.html">
+        <img src="images/products/men/nam_aosomi.png" alt="Áo sơ mi ngắn tay nam màu xanh" height="150" />
+      </a>
+
+      <a href="product-detail.html">
+        <img src="images/products/men/nam_aothun.png" alt="Áo thun ngắn tay nam màu đen" height="150" />
+      </a>
+    </section>
+
+
   </main>
 
   <footer>
-     <!-- Menu điều hướng đến các pages -->
+    <!-- Menu điều hướng đến các pages -->
     <nav>
       <ul>
         <li><a href="index.html">Trang chính</a></li>
@@ -80,7 +176,7 @@
         <li><a href="contact.html">Liên hệ</a></li>
       </ul>
     </nav>
-    <p>&#169 Copyright thuộc về Tủ Đồ</p>
+    <p>&#169 Bản quyền thuộc về Tủ Đồ</p>
   </footer>
 </body>
 
